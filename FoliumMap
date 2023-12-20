@@ -1,0 +1,29 @@
+import folium
+import os
+
+os.chdir(r"C:\Users\andyk\SCCWRP\Folium")
+
+initial_coordinates = [39.0968, -120.0324]
+
+mymap = folium.Map(location=initial_coordinates, tiles='OpenStreetMap', zoom_start=12)
+
+# data_points = [
+#     {'coords': [39.0968, -120.0324], 
+#      'popup': '<b>Experiment 1</b><br><a href="http://example.com/page1" target="_blank">More details...</a>'},
+#     {'coords': [39.1668, -120.0924], 
+#      'popup': '<b>Experiment 2</b><br><a href="http://example.com/page2" target="_blank">More details...</a>'}
+# ]
+
+data_points = [
+    {'coords': [39.0968, -120.0324], 'popup': '<b>Experiment 1</b><br>Details here...'},
+    {'coords': [39.1668, -120.0924], 'popup': '<b>Experiment 2</b><br>More details...'}
+]
+
+for point in data_points:
+    folium.Marker(
+        location=point['coords'],
+        popup=point['popup'],
+        icon=folium.Icon(icon='info-sign')
+    ).add_to(mymap)
+
+mymap.save("my_interactive_map.html")
