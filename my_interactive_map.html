@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cf14f4fd767f8b99ba797f105475f06 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8cf14f4fd767f8b99ba797f105475f06" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8cf14f4fd767f8b99ba797f105475f06 = L.map(
+                "map_8cf14f4fd767f8b99ba797f105475f06",
+                {
+                    center: [39.0968, -120.0324],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_799d8dce28070e095db621cc0179e629 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_799d8dce28070e095db621cc0179e629.addTo(map_8cf14f4fd767f8b99ba797f105475f06);
+        
+    
+            var marker_8b0235c136a26403c5439b14d8373242 = L.marker(
+                [39.0968, -120.0324],
+                {}
+            ).addTo(map_8cf14f4fd767f8b99ba797f105475f06);
+        
+    
+            var icon_bea812aa4484344e4a98a83753cdc78a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b0235c136a26403c5439b14d8373242.setIcon(icon_bea812aa4484344e4a98a83753cdc78a);
+        
+    
+        var popup_410757d4cad795a5b988a95ba81bd35d = L.popup({"maxHeight": 350, "maxWidth": 450});
+
+        
+            
+                var html_ab074d75c82a70ec7645fc596a76d910 = $(`<div id="html_ab074d75c82a70ec7645fc596a76d910" style="width: 100.0%; height: 100.0%;">             <b>092523_16S_cyano</b><br>             <div style='max-height: 300px; overflow: auto;'>                 <table style='border-collapse: collapse; width: 100%;'>                     <tr style='border-bottom: 1px solid #ddd;'>                         <th style='padding: 8px; text-align: left;'>File name</th>                         <th style='padding: 8px; text-align: left;'>Description</th>                         <th style='padding: 8px; text-align: left;'>Download</th>                     </tr>                     <tr style='border-bottom: 1px solid #ddd;'>                         <td style='padding: 8px;'>merger_table_85.csv</td>                         <td style='padding: 8px;'>ASV table</td>                         <td style='padding: 8px;'><a href='https://drive.google.com/file/d/1_4kAPjNztYGfbO_3_QpMBfCHMycmp0VS/view?usp=drive_link' download>Download</a></td>                     </tr>                     <tr style='border-bottom: 1px solid #ddd;'>                         <td style='padding: 8px;'>092523_16S_cyano_cyano_monchamp_NB_tax.tsv</td>                         <td style='padding: 8px;'>QZA Taxonomy</td>                         <td style='padding: 8px;'><a href='https://drive.google.com/file/d/1MHN2UN9ikmCMAM_ue0PXE11G9j7D0wEn/view?usp=drive_link' download>Download</a></td>                     </tr>                     <tr style='border-bottom: 1px solid #ddd;'>                         <td style='padding: 8px;'>092523_16S_cyano_Lake_Tahoe_metadata.csv</td>                         <td style='padding: 8px;'>sample metadata file</td>                         <td style='padding: 8px;'><a href='https://drive.google.com/file/d/1WfPcvbQ9J0nlJcvdG1TbN_Csuya1qTzN/view?usp=drive_link' download>Download</a></td>                     </tr>                     <tr style='border-bottom: 1px solid #ddd;'>                         <td style='padding: 8px;'>092523_16S_cyano_merger_table_85_rep_set.fasta</td>                         <td style='padding: 8px;'>representative set of sequences for merger_table.csv</td>                         <td style='padding: 8px;'><a href='https://drive.google.com/file/d/1L-CgxBRMomxv0zg2DlA4nu_mYNoQ-Bqk/view?usp=drive_link' download>Download</a></td>                     </tr>                 </table>             </div>         </div>`)[0];
+                popup_410757d4cad795a5b988a95ba81bd35d.setContent(html_ab074d75c82a70ec7645fc596a76d910);
+            
+        
+
+        marker_8b0235c136a26403c5439b14d8373242.bindPopup(popup_410757d4cad795a5b988a95ba81bd35d)
+        ;
+
+        
+    
+    
+            var marker_eac7e1b98073160d584ffa617f03d9e4 = L.marker(
+                [39.1668, -120.0924],
+                {}
+            ).addTo(map_8cf14f4fd767f8b99ba797f105475f06);
+        
+    
+            var icon_53f962ec751bed36ee42e0449b195e9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eac7e1b98073160d584ffa617f03d9e4.setIcon(icon_53f962ec751bed36ee42e0449b195e9e);
+        
+    
+        var popup_f302e761d2898ae1e447b3e691dc9f4d = L.popup({"maxHeight": 350, "maxWidth": 450});
+
+        
+            
+                var html_98e10b1cf1645f8be3fad8effdbd1144 = $(`<div id="html_98e10b1cf1645f8be3fad8effdbd1144" style="width: 100.0%; height: 100.0%;">             <b>Experiment 2</b><br>             <div style='max-height: 300px; overflow: auto;'>                 <table style='border-collapse: collapse; width: 100%;'>                     <tr style='border-bottom: 1px solid #ddd;'>                         <th style='padding: 8px; text-align: left;'>File name</th>                         <th style='padding: 8px; text-align: left;'>Description</th>                         <th style='padding: 8px; text-align: left;'>Download</th>                     </tr>                     <tr style='border-bottom: 1px solid #ddd;'>                         <td style='padding: 8px;'>092523_16S_cyano_cyano_monchamp_NB_tax.tsv</td>                         <td style='padding: 8px;'>Taxonomy cyano_monchamp_extracted_NB_classifier.qza</td>                         <td style='padding: 8px;'><a href='URL_TO_FILE' download>Download</a></td>                     </tr>                     <!-- Repeat rows for other files -->                 </table>             </div>         </div>`)[0];
+                popup_f302e761d2898ae1e447b3e691dc9f4d.setContent(html_98e10b1cf1645f8be3fad8effdbd1144);
+            
+        
+
+        marker_eac7e1b98073160d584ffa617f03d9e4.bindPopup(popup_f302e761d2898ae1e447b3e691dc9f4d)
+        ;
+
+        
+    
+</script>
+</html>
