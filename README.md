@@ -2,6 +2,10 @@
 
 This project provides an interactive map for environmental DNA data downloads. Users can view different sites on a map and click on markers to download sequence data.
 
+## View the Project
+
+You can view the live project [here](https://andyk99.github.io/SCCWRP_GIS_FoliumSite/).
+
 ## Files in the Repository
 
 ### 1. `config.yml`
@@ -13,6 +17,3 @@ This is the main HTML file that sets up the structure of the website. It include
 ### 3. `my_interactive_map.html`
 This HTML file sets up the interactive map using Leaflet.js. It includes markers that can be clicked to download sequence data files.
 
-## View the Project
-
-You can view the live project [here](https://andyk99.github.io/SCCWRP_GIS_FoliumSite/).
